@@ -1,0 +1,397 @@
+*{font-family: Georgia;
+	margin: 0;
+	padding:0;
+}
+html, body {background-color: #DCDCDC;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+h1{
+	text-transform: uppercase;
+}
+a {color:;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+header{
+	width: 100%;
+	height: 120px;
+	background-color: #4B0082;
+	border-radius: 0px 0px 15px 15px;
+	border: 3px solid #DCDCDC;
+	border-top: none;
+}
+
+nav{width: 90%;
+	height: 90px;
+	margin: 0 auto;
+}
+.nav{height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.nav .hide__menu{
+	display:none;
+
+}
+.nav a {display:block;
+	margin-left: 25px;
+	font-size: 28px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	color:white;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 15px;
+}
+.nav a.burger-menu{
+	font-size: 50px;
+}
+
+.container	{
+	margin: 0 auto;
+    width: 86%;
+	
+}
+
+.about__me{
+	margin-top: 248px;
+    margin-left: 270px;
+	display:flex;
+	justify-content: space-around;
+	height: 280px;
+	align-items: center;
+}
+.about__me__avatar{
+	width: 500px;
+	height: 667px;
+	border:5px solid #4B0082;
+	overflow: hidden; /*чтобы убрать картинки вне слайдера*/
+	border-radius: 10px;
+}
+#string{
+width: 1500px;
+position: relative;  
+left: 0; /*без этого первая прокрутка будет не плавной, а резкой*/
+/*transition: all ease 1s;*/
+
+}
+#string img {    /*убираем падинги 4 пикселя у каждой картинки*/
+	float:left;
+}
+#string:after{   /*очистить поток после float*/
+content:'';       
+display:block;
+clear:both;
+}
+
+.map_frame_desctop{
+	margin: 0 auto;
+	height: 300px;
+}
+footer{margin-top: 50px;
+	width: 100%;
+	height: 100px;
+background-color: #4B0082;
+display: flex;
+justify-content: space-around;
+}
+
+.footer__social{
+	margin: 0 auto;
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+	align-content: center;
+}
+
+.footer__social img {
+	width: 64px;
+	height: 64px;
+	display:block;
+	border-radius: 50%;
+}
+.icon__vk, .icon__instagram, .icon__Git{
+	border-radius: 50%;
+	background-color: #C0C0C0;
+}
+.icon__vk:active, .icon__instagram:active, .icon__Git:active{
+	filter: brightness(2);
+}
+
+
+@media screen and (max-width: 1149px){
+
+#m {
+	display:block;
+}
+    header{
+    	border-radius: 15px;
+    	 border:none;
+    }
+    nav{
+    	width: 100%;
+    	border-radius: 15px;
+
+    }
+    .nav {
+	 	justify-content: space-between;
+}
+
+	 .nav a {
+		display:none;
+      }	
+     .nav .hide__menu{
+		display: block;
+		font-size: 35px;
+		border:none;
+      }
+	
+	.nav .hide__menu-cv{
+		font-size: 50px;
+		margin-right: 25px;
+		cursor: default;
+	}
+.nav .hide__menu-cv:hover{
+	margin: 0;
+	margin-right: 25px;
+}
+nav .nav.responsive{
+	
+	height: 900px;
+	display:flex;
+	overflow: hidden;
+	flex-direction:column;
+    justify-content: center;
+    margin-top: -20px;
+}
+.nav.responsive a{
+	height: 100px;
+	font-size: 58px;
+	width: 100%;
+	padding-top: 35px;
+display:block;
+text-align: center;
+background-color: #4B0082;
+margin: 0; 
+border-radius: 5px;
+border-top: 1px solid gray;
+}
+.nav.responsive a:hover:not(:first-child){
+ font-weight: bold;
+}
+
+.nav.responsive a:focus:not(:first-child){
+ font-weight: bold;
+}
+
+.nav.responsive a:hover:not(:first-child){
+	margin: 1px;
+}
+
+.nav.responsive a:focus:not(:first-child){
+	margin: 1px;
+}
+
+.nav.responsive a.burger-menu{
+	font-size: 50px;
+text-align: left;
+padding-top: 44px;
+padding-left: 80px;
+border-radius: 20px;
+}
+
+.nav.responsive .hide__menu-cv{
+	display:none;
+}
+
+.about__me{
+    margin-left: auto;
+	display:flex;
+	margin-top: 20px;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 500px;
+	align-items: center;
+}
+.about__me__avatar{
+	margin: 0 auto;
+	width: 500px;
+	height: 667px;
+	border:5px solid #4B0082;
+	overflow: hidden; /*чтобы убрать картинки вне слайдера*/
+	border-radius: 10px;
+}
+#string{
+width: 1500px;
+position: relative;  
+left: 0; /*без этого первая прокрутка будет не плавной, а резкой*/
+/*transition: all ease .0001s;*/
+
+}
+#string img {    /*убираем падинги 4 пикселя у каждой картинки*/
+	float:left;
+}
+#string:after{   /*очистить поток после float*/
+content:'';       
+display:block;
+clear:both;
+}
+
+.main__content{margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 500px;
+
+}
+
+
+.main__content p {font-size: 30px;
+	text-align: center;
+}
+
+.main__content h3 {font-size: 33px;
+	text-align: center;
+}
+
+.about__me__info, .skills, .aim_content, .experience, .education, .contacts, .map {border:5px solid black;
+	border-radius: 10px;
+	background-color: #C0C0C0;
+margin-top: 20px;
+padding: 10px;
+border-color: #4B0082;
+}
+
+.skills h3, .aim_content h3, .experience h3, .education h3, .contacts h3, .map h3 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.about__me__info{
+	margin-top: -300px;
+}
+.about__me__info p{
+	font-size: 33px
+}
+
+.contacts p {
+	font-size: 33px;
+}
+ .contacts a p, .phone__number {
+color:#4B0082;
+background-color: #F0E68C;
+border-radius: 10px;
+padding: 10px;
+}
+.contacts a p:last-child{
+	margin-bottom: 10px;
+}
+.map{
+	text-align: center;
+}
+
+.map_frame_desctop{
+	margin: 0 auto;
+	height: 500px;
+
+}
+footer{height: 200px;
+display: flex;
+border-radius: 15px;
+flex-direction: column;
+justify-content: center;
+}
+.footer__social{
+	width: 80%;
+}
+.footer__social img {
+	width: 128px;
+	height: 128px;
+
+}
+ }
+@media screen and (max-width: 685px){
+.nav .hide__menu-cv{
+		font-size: 30px;
+	}
+
+}
+
+@media screen and (min-width: 1150px){
+   
+.center {width: 1350px;
+	margin: 0 auto;
+}
+
+   .main__content{width: 90%;
+	margin-top: -500px;
+	margin-left: 30px;
+}
+
+.main__content p {font-size: 26px;
+	text-align: center;
+}
+
+.main__content h3 {font-size: 33px;
+	text-align: center;
+}
+
+.about__me__info, .skills, .aim_content, .experience, .education, .contacts, .map {border:5px solid black;
+	border-radius: 10px;
+	background-color: #C0C0C0;
+margin-top: 50px;
+padding: 10px;
+border-color: #4B0082;
+}
+
+.skills h3, .aim_content h3, .experience h3, .education h3, .contacts h3, .map h3 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.about__me__info{
+	width: 50%;
+	margin-top: 22px;
+}
+.aim_content{width: 50%;
+	margin-top: 70px;
+}
+.skills{width: 50%;
+	margin-top: 70px;
+}
+
+.experience, .education, .contacts, .map{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+
+
+
+
+}
+
+@media screen and (min-width: 1705px){
+	.experience, .education, .contacts, .map{
+	margin-top: 100px;}
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1305px){
+	.nav a{
+		font-size: 22px;
+	}
+
+}
+
+
+
+
+
